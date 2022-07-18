@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Asda Campaign Team Toolkit</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+	
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+  <script src="assets/js/jquery.includeHTML.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+	
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- VUE CSS -->
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+
+<!-- A grey horizontal navbar that becomes vertical on small screens -->
+
+<!-- ======= Header ======= -->
+  <header id="header" class="header-locked">
+    <div class="container d-flex align-items-center">
+
+      <h1 class="logo me-auto"><a href="index.html"><img class="asda-logo" alt="Asda" src="assets/img/logo.png"><div class="header-text">Campaigns</div></a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="index.html">Home</a></li>
+          <li><a class="nav-link" href="code-templates.html">Coded Templates</a></li>
+          <li class="dropdown"><a href="#"><span>Toolkit</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a class="active" href="branded-zone-creator.html">Branded Zone Creator</a></li>
+              <li><a href="banner-generator.html">Banner Generator</a></li>
+            </ul>
+          </li>
+		<li class="dropdown"><a href="#"><span>Resources</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="https://groceries.asda.com/event/designguidelines_homepage">Design Guidelines</a></li>
+              <li><a href="https://teams.wal-mart.com/sites/BannerTemplates/Shared%20Documents/Forms/AllItems.aspx?originalPath=aHR0cHM6Ly90ZWFtcy53YWwtbWFydC5jb20vOmY6L3MvQmFubmVyVGVtcGxhdGVzL0V0SUs3U3hKc3M1R2o2LXYyUjhIZVIwQnlWZ05DRjlEaEVjUEhqMlpXMmVQZEE%5FcnRpbWU9YTFYcDFsTVkyRWc&viewid=167abeef%2D28b8%2D4134%2D922d%2Ddc8aaf902c02">Banner Templates</a></li>
+              <li><a href="https://assets.adobe.com/public/724ee38f-48b2-4402-77e1-2451252eca33">PSD Templates</a></li>
+            </ul>
+          </li>
+          <li><a class="getstarted scrollto" href="https://groceries.asda.com/event/designguidelines_homepage">Design Guidelines</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+		
+    </div>
+  </header><!-- End Header -->
+
+</head>
+
+<body>
+	
+<div id="main-content">	
+<h1>Takeover Creator</h1>
+	
+
+	
+	
+	
+	
+	
+	
+	
+<style>
+	
+</style>	
+	
+	
+	
+<div id="app">
+  <main>
+  <div class="settings-container">
+	<input v-model="message" placeholder="edit me">
+	<input v-model="background" placeholder="edit me">
+	<br>
+
+	<label for="">
+	   rotateX: <input v-model="rotateX">
+		<br>
+	   <input type="range" min="-180" max="180"
+			  v-model="rotateX"/>
+	 </label>
+	</div>
+	  
+	  
+			<p>Message is: {{ message }}</p>
+
+			<div class="box-container">
+			<div class="box" :style="{ 
+					transform: `rotateX(${rotateX}deg)`
+
+					}"></div>
+			</div>
+
+	<div class="code-snippet code-snippet-gen" height="400px">
+	<style type="text/css">
+    body {
+        background: url({{background}}) no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+
+    .co-product-list__header {
+        background: #fff;
+        color: #3d3d3d !important;
+        position: relative;
+        bottom: -18px;
+        margin-left: 1px;
+        margin-right: 0.4%;
+    }
+
+    .co-product-list__header h3 {
+        background: #fff;
+        color: #3d3d3d !important;
+        padding-left: 16px;
+    }
+
+    .co-product-dynamic {
+        background: #fff;
+    }
+
+    @media (max-width: 768px) {
+        .co-product-list__header {
+            margin-right: 0.25%;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .co-product-list__main-cntr {
+            background: none !important;
+        }
+
+        .co-product-list__header {
+            bottom: 0px;
+            margin-left: 0px;
+            margin-right: 0px;
+        }
+    }
+
+    @media (max-width: 360px) {
+        .co-product-list__header {
+            min-height: 40px !important;
+            height: 100% !important;
+        }
+
+        .co-product-list__header h3 {
+            line-height: 1.4;
+            padding-right: 16px;
+            padding-top: 8px;
+            padding-bottom: 8px;
+        }
+    }
+
+    .recipe-listings__title {
+        color: #fff !important;
+    }
+
+    .recipe-listings {
+        padding-top: 20px;
+    }
+
+    .recipe__details {
+        padding-top: 10px !important;
+        height: 123px !important;
+    }
+
+    .recipe__details {
+        background: rgba(255, 255, 255, 0.9);
+        border-radius: 0px 0px 5px 5px;
+        margin-top: 0px !important;
+        padding: 5px;
+        padding-top: 22px;
+        height: 135px;
+    }
+
+    .recipe-info {
+        padding: 5px;
+        margin-bottom: 5px;
+    }
+
+    .recipe__image {
+        margin-bottom: -4px !important;
+    }
+
+
+
+
+    /* ----------------------------------- DO NOT EDIT -------------------------------------------------- */
+    .column {
+        width: 100%;
+        padding: 0px !important;
+        margin: 0px !important;
+    }
+
+    .column img {
+        display: inline;
+        max-width: 100%;
+    }
+
+    .container #mainContainer {
+        background: none !important;
+    }
+
+    .mini-trolley {
+        background: #fff;
+    }
+
+    .bannerStatic img {
+        max-height: 100%;
+        max-width: 100%;
+    }
+
+    .co-product-list__main-cntr {
+        background: none !important;
+    }
+
+    .back-to-top__button {
+        background: #fff;
+    }
+
+    main.layout__main {
+        position: relative;
+    }
+
+    .asda-banner-static {
+        margin-bottom: 0px;
+    }
+
+    /* Hides Adserve Banner Divider */
+    .iab-banner {
+        display: none;
+    }
+
+    /* -------------------------------------------------------------------------------------------------- */
+
+    .TO-Banner {
+        margin: auto;
+        width: 100%;
+        max-width: 1064px;
+        padding: 0px;
+        margin-bottom: 15px;
+        display: block;
+    }
+
+    .TO-Banner-mob {
+        margin: auto;
+        width: 100%;
+        max-width: 1064px;
+        padding: 0px;
+        margin-bottom: 15px;
+        display: none;
+    }
+
+    /* Custom Header colour*/
+    .taxonomy-breadcrumb__current,
+    .taxonomy-breadcrumb__link,
+    a.taxonomy-breadcrumb__link,
+    a.taxonomy-breadcrumb__link a,
+    h1,
+    .h3,
+    .layout__title,
+    .taxonomy-explore__title {
+        color: #fff !important;
+    }
+
+
+
+    /* Tablet */
+    @media screen and (max-width:768px) {}
+
+
+
+    /* Mobile Large */
+    @media screen and (max-width:480px) {
+        .TO-Banner {
+            display: none;
+        }
+
+        .TO-Banner-mob {
+            display: block;
+        }
+
+        body {
+            background-size: cover;
+        }
+    }
+
+/*
+PNG Image Link 
+<img  data-cke-saved-src="https://ui3.assets-asda.com/dm/XXX?fmt=png-alpha&amp;scl=1" src="https://ui3.assets-asda.com/dm/XXX?fmt=png-alpha&amp;scl=1" alt="XXX" /> 
+
+EXTERNAL LINK CLICK
+Intert target="_blank" into the a tag
+e.g. <a href="www.asda.com" target="_blank">
+*/
+    
+</style>
+
+<div class="column12">
+    <div class="column xlarge_colspan12 large_colspan12 colspan12 med_colspan12 small_colspan12 ">
+        <div class="TO-Banner"><a class="bannerLink" data-trackingcode="" href="https://groceries.asda.com/cmslisting/content/event?N=2502060034"><img alt="Extra Special Pies" src="https://ui3.assets-asda.com/dm/AMP_1029_AddoOLExtraSpecialPiesQ42020_ContentHeader?scl=1" /></a></div>
+
+        <div class="TO-Banner-mob"><a class="bannerLink" data-trackingcode="" href="https://groceries.asda.com/cmslisting/content/event?N=2502060034"><img alt="Extra Special Pies" src="https://ui3.assets-asda.com/dm/AMP_1029_AddoOLExtraSpecialPiesQ42020_ContentHeaderMR?scl=1" /></a></div>
+    </div>
+</div>
+</div>
+	
+	  
+	  
+	  
+	  
+	  
+	  
+</main>
+</div>
+	
+<script>
+	new Vue({
+	  el: "#app",
+	  data: {
+		rotateX: 0,
+		background: "https://ui3.assets-asda.com/dm/AMP_1029_AddoOLExtraSpecialPiesQ42020_Skin?scl=1",
+		message: "Hi there"
+	  }
+	});
+</script>
+	
+</body>
+</html>
+
+	
+	
+	
+	
+	
+	
+	
+</div>
+	
+<!-- Footer -->
+<footer class="page-footer font-small indigo">
+
+  <!-- Footer Links -->
+  <div class="container">
+
+    <!-- Grid row-->
+    <div class="row text-center d-flex justify-content-center pt-5 mb-3">
+
+		The Asda Campaign Team Toolkit Portal
+
+    </div>
+    <!-- Grid row-->
+    <hr class="rgba-white-light" style="margin: 0 15%;">
+
+    <!-- Grid row-->
+    <hr class="clearfix d-md-none rgba-white-light" style="margin: 10% 15% 5%;">
+
+    <!-- Grid row-->
+    <div class="row pb-3">
+
+      <!-- Grid column -->
+      <div class="col-md-12">
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row-->
+
+  </div>
+  <!-- Footer Links -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2022 Copyright:
+    <a href="https://asda.com/"> asda.com</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+	
+  <!-- VUE JS -->
+  <script type="text/javascript" src="assets/js/vue.js"></script>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+  
+</body>
+
+</html>
