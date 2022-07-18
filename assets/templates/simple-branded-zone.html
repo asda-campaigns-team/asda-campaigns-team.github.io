@@ -1,0 +1,1039 @@
+<!-- 
+/* ------------------------------------------------- */
+/*	Simple Branded Zone - Module
+/* ------------------------------------------------- */
+ -->
+
+<style type="text/css">
+html {
+    scroll-behavior: auto;
+}
+	
+/* Image Preload */
+.image-preload {
+    position: absolute;
+    z-index: -999;
+    height: 0;
+    width: 0;
+}
+#preload-01 {background: url(https://ui3.assets-asda.com/dm/AMP_SimpleBrandedZone_Button?scl=1&fmt=png-alpha) no-repeat -9999px -9999px;}
+#preload-02 {background: url(https://ui3.assets-asda.com/dm/AMP_SimpleBrandedZone_Button_A?scl=1&fmt=png-alpha) no-repeat -9999px -9999px;}
+#preload-03 {background: url(https://ui3.assets-asda.com/dm/AMP_SimpleBrandedZone_Button_M?scl=1&fmt=png-alpha) no-repeat -9999px -9999px;}
+#preload-04 {background: url(https://ui3.assets-asda.com/dm/AMP_SimpleBrandedZone_Button_M_A?scl=1&fmt=png-alpha) no-repeat -9999px -9999px;}
+#preload-05 {background: url(https://ui3.assets-asda.com/dm/AMP_SimpleBrandedZone_Button?scl=1&fmt=png-alpha) no-repeat -9999px -9999px;}
+#preload-06 {background: url(https://ui3.assets-asda.com/dm/AMP_SimpleBrandedZone_Button_A?scl=1&fmt=png-alpha) no-repeat -9999px -9999px;}
+#preload-07 {background: url(https://ui3.assets-asda.com/dm/AMP_SimpleBrandedZone_Button_M?scl=1&fmt=png-alpha) no-repeat -9999px -9999px;}
+#preload-08 {background: url(https://ui3.assets-asda.com/dm/AMP_SimpleBrandedZone_Button_M_A?scl=1&fmt=png-alpha) no-repeat -9999px -9999px;}
+#preload-09 {background: url(https://ui3.assets-asda.com/dm/AMP_SimpleBrandedZone_Button?scl=1&fmt=png-alpha) no-repeat -9999px -9999px;}
+#preload-10 {background: url(https://ui3.assets-asda.com/dm/AMP_SimpleBrandedZone_Button_A?scl=1&fmt=png-alpha) no-repeat -9999px -9999px;}
+#preload-11 {background: url(https://ui3.assets-asda.com/dm/AMP_SimpleBrandedZone_Button_M?scl=1&fmt=png-alpha) no-repeat -9999px -9999px;}
+#preload-12 {background: url(https://ui3.assets-asda.com/dm/AMP_SimpleBrandedZone_Button_M_A?scl=1&fmt=png-alpha) no-repeat -9999px -9999px;}
+
+body::after {
+    position: absolute;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    z-index: -1;
+}
+
+
+/* Simple Branded Zone Containers */
+.bz-simple-container {
+    max-width: 1064px;
+    margin-bottom: 20px;
+}
+.bz-simple-container {
+    padding-bottom: 57%;
+}
+
+@media screen and (max-width:480px) {
+.bz-simple-container {
+    padding-bottom: 150%;
+}
+}
+.bz-container {
+    font-family: Source Sans Pro, sans-serif; /* Custom Font */
+    color: #000; /* Customise Default Text Colour */
+    text-align: center;
+    font-weight: 400;
+    font-style: normal;
+    position: relative;
+}
+.bz-header-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+    width: 96% !important;
+    padding: 2%;
+    margin: auto;
+    z-index: 2
+}
+	
+/* Menu */
+.bz-menu-container {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+}
+.bz-menu-logo-container {
+    margin-top: 1.2%; /* Customise Logo Margin Top */
+    margin-bottom: 1.2%; /* Customise Logo Margin Bottom */
+}
+.bz-menu-logo {
+    justify-self: center;
+    align-self: center;
+    width: 26%; /* Customise Logo Size */
+}
+.bz-menu button {
+	cursor: pointer margin: 10px;
+    width: 100%;
+}
+.bz-menu a {
+    width: 33%;
+}
+.bz-menu {
+    font-weight: 700;
+    text-transform: uppercase;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    max-width: 100%;
+    padding: 0% 14%;
+}
+@media only screen and (max-width:1395px) {
+.bz-menu {
+	grid-gap: 1.3%;
+}
+}
+@media only screen and (max-width:480px) {
+.bz-menu-logo {
+    width: 80%; /* Customise Mobile Logo Percentage */
+}
+}
+.bz-item {
+    position: relative;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 12px;
+    border: none;
+    background: #fff;
+    padding: 0% 3%;
+    color: #fff;
+    margin-bottom: -2%;
+    padding-top: 3%;
+    padding-bottom: 0%;
+    height: 104%;
+}
+.bz-item img {
+    width: 70%;
+}
+.bz-menu .bz-item {
+    font-size: 3.2vw;
+    line-height: 4vw;
+}
+.bz-button-container p {
+    font-size: 9px;
+}
+	
+/* Desktop Backgrounds */
+.bz-tab-content-1 {
+    background: url(https://ui3.assets-asda.com/dm/AMP_SimpleBrandedZone_Background?scl=1); /* Customise Tab 1 Background */
+}
+.bz-tab-content-2 {
+    background: url(https://ui3.assets-asda.com/dm/AMP_SimpleBrandedZone_Background?scl=1); /* Customise Tab 2 Background */
+}
+.bz-tab-content-3 {
+    background: url(https://ui3.assets-asda.com/dm/AMP_SimpleBrandedZone_Background?scl=1); /* Customise Tab 3 Background */
+}
+.bz-tab-content {
+    padding-bottom: 56.25%;
+    position: relative;
+    background-size: cover;
+}
+	
+	
+/* Mobile Backgrounds */
+@media only screen and (max-width:480px) {
+.bz-tab-content-1 {
+    background: url(https://ui3.assets-asda.com/dm/AMP_SimpleBrandedZone_Background_M?scl=1) center/cover no-repeat; /* Customise Tab 1 Background Mobile */
+}
+.bz-tab-content-2 {
+    background: url(https://ui3.assets-asda.com/dm/AMP_SimpleBrandedZone_Background_M?scl=1) center/cover no-repeat; /* Customise Tab 2 Background Mobile */
+}
+.bz-tab-content-3 {
+    background: url(https://ui3.assets-asda.com/dm/AMP_SimpleBrandedZone_Background_M?scl=1) center/cover no-repeat; /* Customise Tab 3 Background Mobile */
+}
+}
+	
+/* Desktop Buttons */
+.bz-menu a:nth-child(1) .bz-item {
+    background: url(https://ui3.assets-asda.com/dm/AMP_SimpleBrandedZone_Button?scl=1&fmt=png-alpha) no-repeat; /* Customise Button 1 */
+    background-size: 100%;
+    background-position: center;
+    padding: 10%;
+}
+.bz-menu a:nth-child(2) .bz-item {
+    background: url(https://ui3.assets-asda.com/dm/AMP_SimpleBrandedZone_Button?scl=1&fmt=png-alpha) no-repeat; /* Customise Button 2 */
+    background-size: 100%;
+    background-position: center;
+    padding: 10%;
+}
+.bz-menu a:nth-child(3) .bz-item {
+    background: url(https://ui3.assets-asda.com/dm/AMP_SimpleBrandedZone_Button?scl=1&fmt=png-alpha) no-repeat; /* Customise Button 3 */
+    background-size: 100%;
+    background-position: center;
+    padding: 10%;
+}
+
+/* Desktop Buttons - Active/Hover State */
+.bz-menu a:nth-child(1).active button, .bz-menu a:nth-child(1):hover button {
+    background: url(https://ui3.assets-asda.com/dm/AMP_SimpleBrandedZone_Button_A?scl=1&fmt=png-alpha) no-repeat 100%/contain !important; /* Customise Button 1 - Hover/Active */
+}
+.bz-menu a:nth-child(2).active button, .bz-menu a:nth-child(2):hover button {
+    background: url(https://ui3.assets-asda.com/dm/AMP_SimpleBrandedZone_Button_A?scl=1&fmt=png-alpha) no-repeat 100%/contain !important; /* Customise Button 2 - Hover/Active */
+}
+.bz-menu a:nth-child(3).active button, .bz-menu a:nth-child(3):hover button {
+    background: url(https://ui3.assets-asda.com/dm/AMP_SimpleBrandedZone_Button_A?scl=1&fmt=png-alpha) no-repeat 100%/contain !important; /* Customise Button 3 - Hover/Active */
+}
+
+	
+/* Mobile Buttons */
+@media only screen and (max-width:480px) {
+.bz-menu a:nth-child(1) .bz-item {
+    background: url(https://ui3.assets-asda.com/dm/AMP_SimpleBrandedZone_Button_M?scl=1&fmt=png-alpha) no-repeat; /* Customise Button 1 Mobile */
+    background-size: cover;
+    background-position: center;
+    padding: 19% 0%; /* Customise Button Height */
+}
+.bz-menu a:nth-child(2) .bz-item {
+    background: url(https://ui3.assets-asda.com/dm/AMP_SimpleBrandedZone_Button_M?scl=1&fmt=png-alpha) no-repeat; /* Customise Button 2 Mobile */
+    background-size: cover;
+    background-position: center;
+    padding: 19% 0%; /* Customise Button Height */
+}
+.bz-menu a:nth-child(3) .bz-item {
+    background: url(https://ui3.assets-asda.com/dm/AMP_SimpleBrandedZone_Button_M?scl=1&fmt=png-alpha) no-repeat; /* Customise Button 3 Mobile */
+    background-size: cover;
+    background-position: center;
+    padding: 19% 0%; /* Customise Button Height */
+}
+}
+
+	
+/* Mobile Buttons Hover/Active */
+@media only screen and (max-width:480px) {
+.bz-menu a:nth-child(1).active button, .bz-menu a:nth-child(1):hover button {
+    background: url(https://ui3.assets-asda.com/dm/AMP_SimpleBrandedZone_Button_M_A?scl=1&fmt=png-alpha) no-repeat 100%/cover !important; /* Customise Button 1 Mobile - Hover/Active */
+}
+.bz-menu a:nth-child(2).active button, .bz-menu a:nth-child(2):hover button {
+    background: url(https://ui3.assets-asda.com/dm/AMP_SimpleBrandedZone_Button_M_A?scl=1&fmt=png-alpha) no-repeat 100%/cover !important; /* Customise Button 2 Mobile - Hover/Active */
+}
+.bz-menu a:nth-child(3).active button, .bz-menu a:nth-child(3):hover button {
+    background: url(https://ui3.assets-asda.com/dm/AMP_SimpleBrandedZone_Button_M_A?scl=1&fmt=png-alpha) no-repeat 100%/cover !important; /* Customise Button 3 Mobile - Hover/Active */
+}
+}
+	
+	
+/* Tab Functionality */
+.active, .bz-tab-content {
+    animation: fadeEffect 0s
+}
+.bz-tab-content {
+    position: absolute;
+    width: 100%;
+}	
+
+/* BZ Buttons */
+.bz-button-container {
+    font-family: Source Sans Pro, sans-serif;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    font-size: 10px;
+    padding-bottom: 1.5%;
+}
+.bz-button-container p {
+    margin: 0px;
+}
+.bz-button-container a {
+    text-decoration: none !important;
+}
+
+.bz-tab-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+@media screen and (max-width:480px) {
+.bz-button-container {
+	padding-bottom: 2.5%;
+}
+}
+	
+/* Asda Button */
+.bz-asda-btn {
+    font-family: Source Sans Pro, sans-serif;
+    letter-spacing: .2px;
+    font-weight: 400;
+    background: #68a51c;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+    letter-spacing: .2px;
+    font-weight: 600;
+    margin: auto;
+    line-height: 24px;
+    font-size: 20px;
+    height: 47px;
+    padding: 0 18px;
+}
+.bz-asda-btn:hover {
+    background: #538316
+}
+@media only screen and (max-width:800px) {
+.bz-asda-btn {
+    font-size: 2.1vw;
+    height: 5vw;
+    padding: 0 1.9vw;
+}
+}
+@media only screen and (max-width:480px) {
+.bz-asda-btn {
+    font-size: 4.2vw;
+    height: 10vw;
+    padding: 0 3.8vw;
+}
+}
+
+/* Carousel CSS */
+.glider, .glider-contain {
+    margin: 0 auto;
+    position: relative
+}
+.glider, .glider-track {
+    transform: translateZ(0)
+}
+.glider-dot, .glider-next, .glider-prev {
+    border: 0;
+    padding: 0;
+    user-select: none;
+    outline: 0
+}
+.glider-contain {
+    width: 100%
+}
+.glider {
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: none
+}
+.glider-track {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    z-index: 1
+}
+.glider.draggable {
+    user-select: none;
+    cursor: -webkit-grab;
+    cursor: grab
+}
+.glider.draggable .glider-slide img {
+    user-select: none;
+    pointer-events: none
+}
+.glider.drag {
+    cursor: -webkit-grabbing;
+    cursor: grabbing
+}
+.glider-slide {
+    user-select: none;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    min-width: 150px
+}
+.glider-slide img {
+    max-width: 100%
+}
+.glider::-webkit-scrollbar {
+	opacity:0;
+	height:0
+}
+.glider-next, .glider-prev {
+    position: absolute;
+    background: 0 0;
+    z-index: 2;
+    font-size: 40px;
+    text-decoration: none;
+    cursor: pointer;
+    color: #666;
+    opacity: 1;
+    line-height: 1;
+    transition: opacity .5s cubic-bezier(.17, .67, .83, .67), color .5s cubic-bezier(.17, .67, .83, .67)
+}
+.glider-next:focus, .glider-next:hover, .glider-prev:focus, .glider-prev:hover {
+    color: #ccc
+}
+.glider-next {
+    left: auto
+}
+.glider-next.disabled, .glider-prev.disabled {
+    opacity: .25;
+    color: #666;
+    cursor: default
+}
+.glider-hide {
+    opacity: 0
+}
+.glider-dots {
+    user-select: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 0
+}
+.glider-dot {
+    display: block;
+    cursor: pointer;
+    color: #ccc;
+    border-radius: 999px;
+    background: #ccc;
+    width: 12px;
+    height: 12px;
+    margin: 7px
+}
+.glider-dot:focus, .glider-dot:hover {
+    background: #ddd
+}
+.glider-dot.active {
+    background: #a89cc8
+}
+@media(max-width:36em) {
+.glider::-webkit-scrollbar {
+	opacity:1;
+	-webkit-appearance:none;
+	width:7px;
+	height:3px
+}
+.glider::-webkit-scrollbar-thumb {
+	opacity:1;
+	border-radius:99px;
+	background-color:rgba(156,156,156,.25);
+	-webkit-box-shadow:0 0 1px rgba(255,255,255,.25);
+	box-shadow:0 0 1px rgba(255,255,255,.25)
+}
+}
+	
+/* Custom Carousel CSS */
+.glider img {
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+    user-drag: none;
+}
+.glider-contain img {
+    width: 100%;
+}
+.glider-container {
+    position: relative;
+}
+.glider-next, .glider-prev {
+    position: absolute;
+    top: 44%; /* Customise Carousel Button Vertical Position */
+    line-height: 0.3;
+}
+
+/* Desktop Carousel Settings */
+.bz-carousel-container {
+    position: absolute;
+	transform: translate(-50%, -50%);
+    margin-top: 4.5%; /* Customise Carousel Top Margin */
+    top: 50%; /* Customise Carousel Vertical Position */
+    left: 50%; /* Customise Carousel Horizontal Position */
+    width: 85%; /* Customise Carousel Width */
+}
+	
+/* Arrow Carousel Settings */
+.glider-prev {
+    left: -7%; /* Customise Left arrow position */
+}
+.glider-next {
+    right: -7%; /* Customise right arrow position */
+}
+@media screen and (max-width: 800px) {
+.glider-next {
+    right: -8%; /* Customise Arrow Position Mobile */
+}
+.glider-prev {
+    left: -8%; /* Customise Arrow Position Mobile */
+}
+}
+.glider-container .asda-icon, .glider-container .asda-icon svg {
+    width: 40px; /* Customise arrow size */
+    height: 40px; /* Customise arrow size */
+}
+@media screen and (max-width: 1600px) {
+.glider-container .asda-icon, .glider-container .asda-icon svg {
+    width: 4.5vw; /* Customise Arrow Size */
+    height: 4.5vw; /* Customise Arrow Size */
+}
+}
+
+@media screen and (max-width: 1392px) {
+.glider-container .asda-icon, .glider-container .asda-icon svg {
+    width: 3vw; /* Customise Arrow Size */
+    height: 3vw; /* Customise Arrow Size */
+}
+}
+
+@media screen and (max-width: 1023px) {
+.glider-container .asda-icon, .glider-container .asda-icon svg {
+    width: 4.5vw; /* Customise Arrow Size */
+    height: 4.5vw; /* Customise Arrow Size */
+}
+}
+@media screen and (max-width: 800px) {
+.glider-container .asda-icon, .glider-container .asda-icon svg {
+    width: 5vw; /* Customise Arrow Size */
+    height: 5vw; /* Customise Arrow Size */
+}
+}
+@media screen and (max-width: 480px) {
+.glider-container .asda-icon, .glider-container .asda-icon svg {
+    width: 8vw; /* Customise Arrow Size */
+    height: 8vw; /* Customise Arrow Size */
+}
+}
+.glider-container .asda-icon svg {
+    background: #68a51c; /* Customise Carousel Button Colour */
+}
+.glider-container.asda-icon--white .asda-icon__draw {
+    fill: #fff; /* Customise Carousel Arrow Colour */
+}
+.bz-simple-container .asda-icon svg {
+    stroke: #fff; /* Customise Carousel Arrow Stroke Colour */
+    stroke-width: 1.7px;
+    stroke-linejoin: round;
+}
+.glider-container .asda-icon svg {
+    border: 2px solid #fff; /* Customise Arrow Cirlce Stroke */
+    border-radius: 100px;
+    padding: 6px;
+}
+.glider-dot {
+    margin: 4px 7px;
+    width: 10px;
+    height: 10px;
+    z-index: 2;
+}
+.dots.glider-dots {
+    height: 18px;
+    margin-top: -33px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    z-index: 2;
+}
+.glider-slide {
+    display: flex;
+    flex-direction: column;
+}
+.glider-dots {
+    display: none;
+}
+.glider-dot {
+    background: rgba(0,0,0,0.5);
+}
+.glider-dot.active {
+    background: #000;
+}
+@media screen and (max-width:480px) {
+.glider-slide {
+    flex-direction: column;
+}
+}
+
+/* Mobile Carousel Settings */
+@media screen and (max-width:480px) {
+.bz-carousel-container {
+    width: 75%; /* Customise Carousel Width Mobile */
+    margin-top: 4.5%; /* Customise Carousel Top Margin */
+    top: 50%; /* Customise Carousel Vertical Position */
+    left: 50%; /* Customise Carousel Horizontal Position */
+}
+.glider-contain, .glider-slide {
+    margin-top: 2%;
+}
+.glider-container .asda-icon, .glider-container .asda-icon svg {
+    width: 8vw; /* Customise Arrow Size mobile */
+    height: 8vw; /* Customise Arrow Size mobile */
+}
+.glider-next {
+    right: -15%; /* Customise Arrow Horizontal Position Mobile */
+}
+.glider-prev {
+    left: -15%; /* Customise Arrow Horizontal Position Mobile */
+}
+.bz-carousel-container {
+    margin-top: 1%; /* Customise Carousel Top Margin Mobile */
+}
+}
+
+/* Inner Carousel Content */
+.glider::-webkit-scrollbar {
+height: 0;
+}
+.glider-slide {
+    display: flex;
+}
+.bz-product-img-container {
+    justify-self: center;
+    align-self: center;
+}
+.bz-product-img-container img {
+    width: 100%;
+}
+.bz-carousel-image-m {
+    display: none;
+}
+@media screen and (max-width:480px) {
+.bz-product-img-container {
+    max-width: 100%;
+}
+.bz-carousel-image {
+    display: none;
+}
+.bz-carousel-image-m {
+    display: inline-block;
+}
+}
+	
+/* Text Box - Ignore if not needed */
+.bz-text-container {
+    position: absolute;
+    width: 100%;
+    top: 55%; /* Customise Text Box Vertical Position */
+    left: 27%; /* Customise Text Box Horizontal Position */
+    transform: translate(-50%, -50%);
+    max-width: 400px; /* Customise Text Box Max Width */
+    width: 40vw; /* Customise Text Box Viewport Width */
+}
+.bz-text-title {
+    color: #000; /* Customise Text Title Colour */
+    font-size: 28px; /* Customise Text Title Font Size */
+    font-weight: 700; /* Customise Text Title Font Weight */
+    line-height: 1.2; /* Customise Text Title Font Line Height */
+    margin-bottom: 15px;  /* Customise Text Title Bottom Margin */
+}
+.bz-text-p {
+    color: #000; /* Customise P Text Colour */
+    font-size: 16px; /* Customise P Text Size */
+    line-height: 1.2; /* Customise P Text Line Height */
+}
+@media screen and (max-width: 1315px) {
+.bz-text-container {
+    width: 28vw; /* Customise Text Box Width for -1315px */
+}
+.bz-text-title {
+    font-size: 2.1vw; /* Customise Title Size for -1315px */
+    margin-bottom: 1.5vw; /* Customise Title Margin for -1315px */
+}
+.bz-text-p {
+    font-size: 1.2vw; /* Customise P Text Size for -1315px */
+}
+}
+@media screen and (max-width: 1020px) {
+.bz-text-container {
+    width: 40vw; /* Customise Text Box Width for -1020px */
+}
+.bz-text-title {
+    font-size: 3vw;  /* Customise Title Size for -1020px */
+    margin-bottom: 1.5vw; /* Customise Title Margin for -1020px */
+}
+.bz-text-p {
+    font-size: 1.6vw; /* Customise P Text Size for -1020px */
+}
+}
+@media screen and (max-width: 480px) {
+.bz-text-container {
+    width: 80vw; /* Customise Text Box Width for Mobile */
+    top: 35%; /* Customise Text Box Mobile Vertical Position */
+    left: 50%; /* Customise Text Box Mobile Horizontal Position */
+}
+.bz-text-title {
+    font-size: 5vw; /* Customise Title Size Mobile */
+    margin-bottom: 1.5vw; /* Customise Title Margin Mobile */
+}
+.bz-text-p {
+    font-size: 3.5vw; /* Customise P Text Size Mobile */
+}
+}
+
+/* Video 1 - Ignore if not needed */
+.bz-video-container-1 {
+	position: absolute;
+	width: 100%; 
+	top: 55%; /* Customise Video Vertical Position */
+	left: 73%; /* Customise Video Horizontal Position */
+	transform: translate(-50%, -50%);
+	max-width: 400px; /* Customise Video Max Width */
+	width: 40vw; /* Customise Video Width */
+}
+.bz-video-container-1 video {
+	border: #fff solid 2px; /* Customise Video Border */
+}
+@media screen and (max-width: 1315px) {
+.bz-video-container-1 {
+	width: 28vw; /* Customise Video Width for -1315px */
+}
+}
+@media screen and (max-width: 1020px) {
+.bz-video-container-1 {
+	width: 40vw; /* Customise Video Width for -1020px */
+}
+}
+@media screen and (max-width:480px) {
+.bz-video-container-1 {
+	top: 68%; /* Customise Video Vertical Position for Mobile */
+	left: 50%; /* Customise Video Horizontal Position for Mobile*/
+	max-width: 400px; /* Customise Video Max Width for Mobile */
+	width: 80vw; /* Customise Video Width for Mobile */
+}
+}
+
+/* Video 2 - Ignore if not needed */
+.bz-video-container-2 {
+	position: absolute;
+	width: 100%;
+	top: 55%; /* Customise Video Vertical Position */
+	left: 50%; /* Customise Video Horizontal Position */
+	transform: translate(-50%, -50%);
+	max-width: 400px; /* Customise Video Max Width */
+	width: 40vw; /* Customise Video Width */
+}
+.bz-video-container-2 video {
+	border: #fff solid 2px; /* Customise Video Border */
+}
+@media screen and (max-width: 1315px) {
+.bz-video-container-2 {
+	width: 28vw; /* Customise Video Width for -1315px */
+}
+}
+@media screen and (max-width: 1020px) {
+.bz-video-container-2 {
+	width: 40vw; /* Customise Video Width for -1020px */
+}
+}
+@media screen and (max-width:480px) {
+.bz-video-container-2 {
+	top: 52%; /* Customise Video Vertical Position for Mobile */
+	left: 50%; /* Customise Video Horizontal Position for Mobile*/
+	max-width: 400px; /* Customise Video Max Width for Mobile */
+	width: 80vw; /* Customise Video Width for Mobile */
+}
+}
+		
+/* Header Images - Billboard/Tile */
+.bz-spotlight-image, .bz-spotlight-image-m {
+    width: 100%;
+}
+.bz-spotlight-image-m {
+    display: none;
+}
+.co-product-list__header {
+    display: none;
+}
+
+@media screen and (max-width:480px) {
+.bz-spotlight-image-m {
+    display: block;
+}
+.bz-spotlight-image {
+    display: none;
+}
+}
+@media only screen and (max-width:480px) {
+.bz-tab-content {
+    padding-bottom: 150%;
+}
+.bz-menu-logo-container {
+    margin: 2% 26%;
+}
+.bz-menu {
+    margin: 0%;
+    grid-gap: 2px;
+    padding: 0%;
+}
+}
+</style>
+
+<div class="image-preload">
+  <div id="preload-01"></div>
+  <div id="preload-02"></div>
+  <div id="preload-03"></div>
+  <div id="preload-04"></div>
+  <div id="preload-05"></div>
+  <div id="preload-06"></div>
+  <div id="preload-07"></div>
+  <div id="preload-08"></div>
+  <div id="preload-09"></div>
+  <div id="preload-10"></div>
+  <div id="preload-11"></div>
+  <div id="preload-12"></div>
+</div>
+
+<div class="bz-simple-container">
+  <div class="bz-container">
+    <div class="bz-menu-container">
+		
+      <div class="bz-menu-logo-container">
+		  <img alt="Asda Logo" class="bz-menu-logo" src="https://ui3.assets-asda.com/dm/AMP_SimpleBrandedZone_Logo?scl=1&fmt=png-alpha" />
+      </div>
+		
+      <div class="bz-menu" id="Tab">
+        <a class="bz-item-container bannerLink active" data-trackingcode="210930_FloraProActiv_Tab_Range" onclick="openItem(event, 'bz-tab-content-1')">
+        <button class="bz-item" tabindex="0"></button>
+        </a> 
+        <a class="bz-item-container bannerLink" data-trackingcode="210930_FloraProActiv_Tab_Meals" onclick="openItem(event, 'bz-tab-content-2')">
+        <button class="bz-item" tabindex="0"></button>
+        </a>
+        <a class="bz-item-container bannerLink" data-trackingcode="210930_FloraProActiv_Tab_Tips" onclick="openItem(event, 'bz-tab-content-3')">
+        <button class="bz-item" tabindex="0"></button>
+        </a>
+      </div>
+		
+    </div>
+	  
+    <div class="bz-tab-content bz-tab-content-1" id="bz-tab-content-1" style="visibility: visible;">
+		<div class="bz-text-container">
+			<div class="bz-text-title">
+			Lorem ipsum dolor sit amet
+			</div>
+			<div class="bz-text-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+			</div>
+		</div>
+		<div class="bz-video-container-1">
+			<video controls width="100%" autoplay muted loop poster="https://ui3.assets-asda.com/dm/AMP_1028_ArielWPP_Video?scl=1">
+				<source  src="https://s7d2.scene7.com/is/content/asdagroceries/4.%20Activity%20&%20Design/1.%20Campaigns/2021/Funded%20Content%20Pages/Branded%20Zones/211028%20Ariel%20WPP/AMP_1028_ArielWPP_Video_Mobile_Autox360p_800k.mp4" type="video/mp4">
+			</video>
+		</div>
+      <div class="bz-button-container">
+        <a class="bannerLink" data-trackingcode="210930_FloraProActiv_ShopBtn_Range" href="#1">
+        <button class="bz-asda-btn" tabindex="0">Shop now</button>
+        </a>
+      </div>
+    </div>
+	  
+    <div class="bz-tab-content bz-tab-content-2" id="bz-tab-content-2" style="visibility: hidden;">
+		<div class="bz-video-container-2">
+			<video controls width="100%" autoplay muted loop poster="https://ui3.assets-asda.com/dm/AMP_1028_ArielWPP_Video?scl=1">
+				<source  src="https://s7d2.scene7.com/is/content/asdagroceries/4.%20Activity%20&%20Design/1.%20Campaigns/2021/Funded%20Content%20Pages/Branded%20Zones/211028%20Ariel%20WPP/AMP_1028_ArielWPP_Video_Mobile_Autox360p_800k.mp4" type="video/mp4">
+			</video>
+		</div>
+      <div class="bz-button-container">
+        <a class="bannerLink" data-trackingcode="210930_FloraProActiv_ShopBtn_Meals" href="#2">
+        <button class="bz-asda-btn" tabindex="0">Shop now</button>
+        </a> 
+      </div>
+    </div>
+	  
+    <div class="bz-tab-content bz-tab-content-3" id="bz-tab-content-3" style="visibility: hidden;">
+      <div class="bz-carousel-container">
+        <div class="glider-container">
+          <div class="glider-contain">
+            <div class="glider glider">
+			
+              <div tabindex="0">
+                <div class="bz-product-img-container">
+					<img class="bz-carousel-image" alt="Reduce your intake of saturated fats and trans fats by replacing them with heart-healthy monounsaturated and polyunsaturated fats, like Flora ProActiv." src="https://ui3.assets-asda.com/dm/210930_FloraProActiv_Tip_1?scl=1&fmt=png-alpha">
+					<img class="bz-carousel-image-m" alt="Reduce your intake of saturated fats and trans fats by replacing them with heart-healthy monounsaturated and polyunsaturated fats, like Flora ProActiv." src="https://ui3.assets-asda.com/dm/210930_FloraProActiv_Tip_M_1?scl=1&fmt=png-alpha">
+                </div>
+              </div>
+				
+              <div tabindex="0">
+                <div class="bz-product-img-container">
+					<img class="bz-carousel-image" alt="Eat a balanced diet with plenty of fruit and vegetables." src="https://ui3.assets-asda.com/dm/210930_FloraProActiv_Tip_2?scl=1&fmt=png-alpha">
+					<img class="bz-carousel-image-m" alt="Eat a balanced diet with plenty of fruit and vegetables." src="https://ui3.assets-asda.com/dm/210930_FloraProActiv_Tip_M_2?scl=1&fmt=png-alpha">
+                </div>
+              </div>
+				
+              <div tabindex="0">
+                <div class="bz-product-img-container">
+					<img class="bz-carousel-image" alt="Add foods with plant sterols, such as Flora ProActiv, into your daily diet. Plant sterols have been proven to help lower cholesterol." src="https://ui3.assets-asda.com/dm/210930_FloraProActiv_Tip_3?scl=1&fmt=png-alpha">
+					<img class="bz-carousel-image-m" alt="Add foods with plant sterols, such as Flora ProActiv, into your daily diet. Plant sterols have been proven to help lower cholesterol." src="https://ui3.assets-asda.com/dm/210930_FloraProActiv_Tip_M_3?scl=1&fmt=png-alpha">
+                </div>
+              </div>
+				
+              <div tabindex="0">
+                <div class="bz-product-img-container">
+					<img class="bz-carousel-image" alt="Increase ‘good’ cholesterol, by keeping active and doing physical activity for 30 minutes or more, five times a week." src="https://ui3.assets-asda.com/dm/210930_FloraProActiv_Tip_4?scl=1&fmt=png-alpha">
+					<img class="bz-carousel-image-m" alt="Increase ‘good’ cholesterol, by keeping active and doing physical activity for 30 minutes or more, five times a week." src="https://ui3.assets-asda.com/dm/210930_FloraProActiv_Tip_M_4?scl=1&fmt=png-alpha">
+                </div>
+              </div>
+				
+              <div tabindex="0">
+                <div class="bz-product-img-container">
+					<img class="bz-carousel-image" alt="Eat foods containing oats and barley. These contain beta-glucans which have been shown to lower cholesterol." src="https://ui3.assets-asda.com/dm/210930_FloraProActiv_Tip_5?scl=1&fmt=png-alpha">
+					<img class="bz-carousel-image-m" alt="Eat foods containing oats and barley. These contain beta-glucans which have been shown to lower cholesterol." src="https://ui3.assets-asda.com/dm/210930_FloraProActiv_Tip_M_5?scl=1&fmt=png-alpha">
+                </div>
+              </div>
+				
+            </div>
+          </div>
+          <button aria-label="Previous" class="glider-prev glider-prev bannerLink" data-trackingcode="210930_FloraProActiv_Tips_Prev" >
+			  <span role="icon" data-auto-id="" class="asda-icon asda-icon--white asda-icon--medium asda-icon--rotate90 product-slider__left-arrow">
+				  <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" data-di-res-id="880b0762-3181ea41" data-di-rand="1617887860671">
+					  <path d="M16.46 19.339l9.193-9.193a.5.5 0 01.707 0l.707.708a.5.5 0 010 .707l-9.546 9.546a2 2 0 01-2.829 0L5.146 11.56a.5.5 0 010-.707l.708-.708a.5.5 0 01.707 0l9.192 9.193a.5.5 0 00.707 0z" fill="#3d3d3d" class="asda-icon__draw" fill-rule="evenodd"></path>
+				  </svg>
+			  </span>
+          </button>
+          <button aria-label="Next" class="glider-next glider-next bannerLink" data-trackingcode="210930_FloraProActiv_Tips_Next">
+			  <span role="icon" data-auto-id="" class="asda-icon asda-icon--white asda-icon--medium asda-icon--rotate270 product-slider__right-arrow">
+				  <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" data-di-res-id="bcb10bbc-ac8dcfa6" data-di-rand="1617887773956">
+					  <path d="M16.46 19.339l9.193-9.193a.5.5 0 01.707 0l.707.708a.5.5 0 010 .707l-9.546 9.546a2 2 0 01-2.829 0L5.146 11.56a.5.5 0 010-.707l.708-.708a.5.5 0 01.707 0l9.192 9.193a.5.5 0 00.707 0z" fill="#3d3d3d" class="asda-icon__draw" fill-rule="evenodd"></path>
+				  </svg>
+			  </span>
+          </button>
+          <div role="tablist" class="dots"></div>
+        </div>
+      </div>
+      <div class="bz-button-container">
+		  <a class="bannerLink" data-trackingcode="210930_FloraProActiv_ShopBtn_Tips" href="#3">
+			  <button class="bz-asda-btn" tabindex="0">Shop now</button>
+		  </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- 
+/* ------------------------------------------------- */
+/*	Simple Branded Zone - Header 1  
+/* ------------------------------------------------- */
+ -->
+
+<div class="bz-spotlight-header" id="1">
+<img alt="Festive Cocktails - Shop the Ingredients" class="bz-spotlight-image" src="https://ui3.assets-asda.com/dm/AMP_SimpleBrandedZone_IAB_Billboard?scl=1">
+<img alt="Festive Cocktails - Shop the Ingredients" class="bz-spotlight-image-m" src="https://ui3.assets-asda.com/dm/AMP_SimpleBrandedZone_IAB_Tile?scl=1">
+</div>
+
+
+<!-- 
+/* ------------------------------------------------- */
+/*	Simple Branded Zone - Header 2  
+/* ------------------------------------------------- */
+ -->
+
+
+<div class="bz-spotlight-header" id="2">
+<img alt="Festive Cocktails - Shop the Ingredients" class="bz-spotlight-image" src="https://ui3.assets-asda.com/dm/AMP_SimpleBrandedZone_IAB_Billboard?scl=1">
+<img alt="Festive Cocktails - Shop the Ingredients" class="bz-spotlight-image-m" src="https://ui3.assets-asda.com/dm/AMP_SimpleBrandedZone_IAB_Tile?scl=1">
+</div>
+
+
+<!-- 
+/* ------------------------------------------------- */
+/*	Simple Branded Zone - Header 2  
+/* ------------------------------------------------- */
+ -->
+
+
+<div class="bz-spotlight-header" id="3">
+<img alt="Festive Cocktails - Shop the Ingredients" class="bz-spotlight-image" src="https://ui3.assets-asda.com/dm/AMP_SimpleBrandedZone_IAB_Billboard?scl=1">
+<img alt="Festive Cocktails - Shop the Ingredients" class="bz-spotlight-image-m" src="https://ui3.assets-asda.com/dm/AMP_SimpleBrandedZone_IAB_Tile?scl=1">
+</div>
+
+
+<!-- 
+/* ------------------------------------------------- */
+/*	Simple Branded Zone - Glider JS
+/* ------------------------------------------------- */
+ -->
+
+
+<script>
+/* @preserve
+    _____ __ _     __                _
+   / ___// /(_)___/ /___  ____      (_)___
+  / (_ // // // _  // -_)/ __/_    / /(_-<
+  \___//_//_/ \_,_/ \__//_/  (_)__/ //___/
+                              |___/
+  Version: 1.7.4
+  Author: Nick Piscitelli (pickykneee)
+  Website: https://nickpiscitelli.com
+  Documentation: http://nickpiscitelli.github.io/Glider.js
+  License: MIT License
+  Release Date: October 25th, 2018
+*/
+!function(e){"function"==typeof define&&define.amd?define(e):"object"==typeof exports?module.exports=e():e()}(function(){var n="undefined"!=typeof window?window:this,e=n.Glider=function(e,t){var i=this;if(e._glider)return e._glider;if(i.ele=e,i.ele.classList.add("glider"),(i.ele._glider=i).opt=Object.assign({},{slidesToScroll:1,slidesToShow:1,resizeLock:!0,duration:.5,easing:function(e,t,i,o,r){return o*(t/=r)*t+i}},t),i.animate_id=i.page=i.slide=0,i.arrows={},i._opt=i.opt,i.opt.skipTrack)i.track=i.ele.children[0];else for(i.track=document.createElement("div"),i.ele.appendChild(i.track);1!==i.ele.children.length;)i.track.appendChild(i.ele.children[0]);i.track.classList.add("glider-track"),i.init(),i.resize=i.init.bind(i,!0),i.event(i.ele,"add",{scroll:i.updateControls.bind(i)}),i.event(n,"add",{resize:i.resize})},t=e.prototype;return t.init=function(e,t){var i=this,o=0,r=0;i.slides=i.track.children,[].forEach.call(i.slides,function(e,t){e.classList.add("glider-slide"),e.setAttribute("data-gslide",t)}),i.containerWidth=i.ele.clientWidth;var s=i.settingsBreakpoint();if(t=t||s,"auto"===i.opt.slidesToShow||void 0!==i.opt._autoSlide){var l=i.containerWidth/i.opt.itemWidth;i.opt._autoSlide=i.opt.slidesToShow=i.opt.exactWidth?l:Math.max(1,Math.floor(l))}"auto"===i.opt.slidesToScroll&&(i.opt.slidesToScroll=Math.floor(i.opt.slidesToShow)),i.itemWidth=i.opt.exactWidth?i.opt.itemWidth:i.containerWidth/i.opt.slidesToShow,[].forEach.call(i.slides,function(e){e.style.height="auto",e.style.width=i.itemWidth+"px",o+=i.itemWidth,r=Math.max(e.offsetHeight,r)}),i.track.style.width=o+"px",i.trackWidth=o,i.isDrag=!1,i.preventClick=!1,i.opt.resizeLock&&i.scrollTo(i.slide*i.itemWidth,0),(s||t)&&(i.bindArrows(),i.buildDots(),i.bindDrag()),i.updateControls(),i.emit(e?"refresh":"loaded")},t.bindDrag=function(){var t=this;t.mouse=t.mouse||t.handleMouse.bind(t);function e(){t.mouseDown=void 0,t.ele.classList.remove("drag"),t.isDrag&&(t.preventClick=!0),t.isDrag=!1}var i={mouseup:e,mouseleave:e,mousedown:function(e){e.preventDefault(),e.stopPropagation(),t.mouseDown=e.clientX,t.ele.classList.add("drag")},mousemove:t.mouse,click:function(e){t.preventClick&&(e.preventDefault(),e.stopPropagation()),t.preventClick=!1}};t.ele.classList.toggle("draggable",!0===t.opt.draggable),t.event(t.ele,"remove",i),t.opt.draggable&&t.event(t.ele,"add",i)},t.buildDots=function(){var e=this;if(e.opt.dots){if("string"==typeof e.opt.dots?e.dots=document.querySelector(e.opt.dots):e.dots=e.opt.dots,e.dots){e.dots.innerHTML="",e.dots.classList.add("glider-dots");for(var t=0;t<Math.ceil(e.slides.length/e.opt.slidesToShow);++t){var i=document.createElement("button");i.dataset.index=t,i.setAttribute("aria-label","Page "+(t+1)),i.setAttribute("role","tab"),i.className="glider-dot "+(t?"":"active"),e.event(i,"add",{click:e.scrollItem.bind(e,t,!0)}),e.dots.appendChild(i)}}}else e.dots&&(e.dots.innerHTML="")},t.bindArrows=function(){var i=this;i.opt.arrows?["prev","next"].forEach(function(e){var t=i.opt.arrows[e];t&&("string"==typeof t&&(t=document.querySelector(t)),t&&(t._func=t._func||i.scrollItem.bind(i,e),i.event(t,"remove",{click:t._func}),i.event(t,"add",{click:t._func}),i.arrows[e]=t))}):Object.keys(i.arrows).forEach(function(e){var t=i.arrows[e];i.event(t,"remove",{click:t._func})})},t.updateControls=function(e){var d=this;e&&!d.opt.scrollPropagate&&e.stopPropagation();var t=d.containerWidth>=d.trackWidth;d.opt.rewind||(d.arrows.prev&&(d.arrows.prev.classList.toggle("disabled",d.ele.scrollLeft<=0||t),d.arrows.prev.classList.contains("disabled")?d.arrows.prev.setAttribute("aria-disabled",!0):d.arrows.prev.setAttribute("aria-disabled",!1)),d.arrows.next&&(d.arrows.next.classList.toggle("disabled",Math.ceil(d.ele.scrollLeft+d.containerWidth)>=Math.floor(d.trackWidth)||t),d.arrows.next.classList.contains("disabled")?d.arrows.next.setAttribute("aria-disabled",!0):d.arrows.next.setAttribute("aria-disabled",!1))),d.slide=Math.round(d.ele.scrollLeft/d.itemWidth),d.page=Math.round(d.ele.scrollLeft/d.containerWidth);var c=d.slide+Math.floor(Math.floor(d.opt.slidesToShow)/2),h=Math.floor(d.opt.slidesToShow)%2?0:c+1;1===Math.floor(d.opt.slidesToShow)&&(h=0),d.ele.scrollLeft+d.containerWidth>=Math.floor(d.trackWidth)&&(d.page=d.dots?d.dots.children.length-1:0),[].forEach.call(d.slides,function(e,t){var i=e.classList,o=i.contains("visible"),r=d.ele.scrollLeft,s=d.ele.scrollLeft+d.containerWidth,l=d.itemWidth*t,a=l+d.itemWidth;[].forEach.call(i,function(e){/^left|right/.test(e)&&i.remove(e)}),i.toggle("active",d.slide===t),c===t||h&&h===t?i.add("center"):(i.remove("center"),i.add([t<c?"left":"right",Math.abs(t-(t<c?c:h||c))].join("-")));var n=Math.ceil(l)>=Math.floor(r)&&Math.floor(a)<=Math.ceil(s);i.toggle("visible",n),n!==o&&d.emit("slide-"+(n?"visible":"hidden"),{slide:t})}),d.dots&&[].forEach.call(d.dots.children,function(e,t){e.classList.toggle("active",d.page===t)}),e&&d.opt.scrollLock&&(clearTimeout(d.scrollLock),d.scrollLock=setTimeout(function(){clearTimeout(d.scrollLock),.02<Math.abs(d.ele.scrollLeft/d.itemWidth-d.slide)&&(d.mouseDown||d.trackWidth>d.containerWidth+d.ele.scrollLeft&&d.scrollItem(d.getCurrentSlide()))},d.opt.scrollLockDelay||250))},t.getCurrentSlide=function(){var e=this;return e.round(e.ele.scrollLeft/e.itemWidth)},t.scrollItem=function(e,t,i){i&&i.preventDefault();var o=this,r=e;if(++o.animate_id,!0===t)e*=o.containerWidth,e=Math.round(e/o.itemWidth)*o.itemWidth;else{if("string"==typeof e){var s="prev"===e;if(e=o.opt.slidesToScroll%1||o.opt.slidesToShow%1?o.getCurrentSlide():o.slide,s?e-=o.opt.slidesToScroll:e+=o.opt.slidesToScroll,o.opt.rewind){var l=o.ele.scrollLeft;e=s&&!l?o.slides.length:!s&&l+o.containerWidth>=Math.floor(o.trackWidth)?0:e}}e=Math.max(Math.min(e,o.slides.length),0),o.slide=e,e=o.itemWidth*e}return o.scrollTo(e,o.opt.duration*Math.abs(o.ele.scrollLeft-e),function(){o.updateControls(),o.emit("animated",{value:r,type:"string"==typeof r?"arrow":t?"dot":"slide"})}),!1},t.settingsBreakpoint=function(){var e=this,t=e._opt.responsive;if(t){t.sort(function(e,t){return t.breakpoint-e.breakpoint});for(var i=0;i<t.length;++i){var o=t[i];if(n.innerWidth>=o.breakpoint)return e.breakpoint!==o.breakpoint&&(e.opt=Object.assign({},e._opt,o.settings),e.breakpoint=o.breakpoint,!0)}}var r=0!==e.breakpoint;return e.opt=Object.assign({},e._opt),e.breakpoint=0,r},t.scrollTo=function(t,i,o){var r=this,s=(new Date).getTime(),l=r.animate_id,a=function(){var e=(new Date).getTime()-s;r.ele.scrollLeft=r.ele.scrollLeft+(t-r.ele.scrollLeft)*r.opt.easing(0,e,0,1,i),e<i&&l===r.animate_id?n.requestAnimationFrame(a):(r.ele.scrollLeft=t,o&&o.call(r))};n.requestAnimationFrame(a)},t.removeItem=function(e){var t=this;t.slides.length&&(t.track.removeChild(t.slides[e]),t.refresh(!0),t.emit("remove"))},t.addItem=function(e){this.track.appendChild(e),this.refresh(!0),this.emit("add")},t.handleMouse=function(e){var t=this;t.mouseDown&&(t.isDrag=!0,t.ele.scrollLeft+=(t.mouseDown-e.clientX)*(t.opt.dragVelocity||3.3),t.mouseDown=e.clientX)},t.round=function(e){var t=1/(this.opt.slidesToScroll%1||1);return Math.round(e*t)/t},t.refresh=function(e){this.init(!0,e)},t.setOption=function(t,e){var i=this;i.breakpoint&&!e?i._opt.responsive.forEach(function(e){e.breakpoint===i.breakpoint&&(e.settings=Object.assign({},e.settings,t))}):i._opt=Object.assign({},i._opt,t),i.breakpoint=0,i.settingsBreakpoint()},t.destroy=function(){function e(t){t.removeAttribute("style"),[].forEach.call(t.classList,function(e){/^glider/.test(e)&&t.classList.remove(e)})}var t=this,i=t.ele.cloneNode(!0);i.children[0].outerHTML=i.children[0].innerHTML,e(i),[].forEach.call(i.getElementsByTagName("*"),e),t.ele.parentNode.replaceChild(i,t.ele),t.event(n,"remove",{resize:t.resize}),t.emit("destroy")},t.emit=function(e,t){var i=new n.CustomEvent("glider-"+e,{bubbles:!this.opt.eventPropagate,detail:t});this.ele.dispatchEvent(i)},t.event=function(e,t,i){var o=e[t+"EventListener"].bind(e);Object.keys(i).forEach(function(e){o(e,i[e])})},e});
+	
+var slider = new Glider(document.querySelector('.glider'), {
+   slidesToScroll: 1,
+   slidesToShow: 1,
+   scrollLock: true,
+   rewind: true,
+   arrows: {
+     prev: '.glider-prev',
+     next: '.glider-next'
+   }
+});
+</script>
+
+
+<!-- 
+/* ------------------------------------------------- */
+/*	Simple Branded Zone - Tabs JS
+/* ------------------------------------------------- */
+ -->
+
+
+<script>
+function openItem(evt, itemName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("bz-tab-content");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.visibility = "hidden";
+  }
+  tablinks = document.getElementsByClassName("bz-item-container");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(itemName).style.visibility = "visible";
+  evt.currentTarget.className += " active";
+}
+</script>

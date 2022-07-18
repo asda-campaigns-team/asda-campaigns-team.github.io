@@ -1,0 +1,13 @@
+<style type="text/css">
+.TO-Banner {width: 100%; max-width:1064px; padding:0px; margin-bottom:15px; display: block; }
+
+.TO-Banner-mob {width: 100%; max-width:1064px; padding:0px; margin-bottom:15px; display: none;}
+@media screen and (max-width:480px){.branded{display:none;}.ts-cs-button{display:none;}}
+/* Mobile Large */
+	@media screen and (max-width:480px){
+	.TO-Banner {display: none;}
+.TO-Banner-mob {display: block;}
+	}
+</style>
+<div class="TO-Banner"><!--BANNER--><img alt="Add some bite to your meal with Paneer" src="https://ui3.assets-asda.com/dm/AMP_0211_SPArlaApetinaPaneerFebOnlineactivity_ContentHeader_Desktop?scl=1" style="width: 100%; max-width: 1064px;" /></div>
+<div class="TO-Banner-mob"><!--BANNER--><img alt="Add some bite to your meal with Paneer" src="https://ui3.assets-asda.com/dm/AMP_0211_SPArlaApetinaPaneerFebOnlineactivity_ContentHeader_Mobile?scl=1" style="width: 100%; max-width: 1064px;" /></div>
